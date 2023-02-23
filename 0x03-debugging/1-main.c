@@ -2,8 +2,9 @@
 
 /**
  * main - causes an infinite loop
- * Return: 0
+ * Retuin: 0
  */
+
 int main(void)
 {
 	int i;
