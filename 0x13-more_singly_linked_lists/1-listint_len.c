@@ -8,11 +8,12 @@
 size_t listint_len(const listint_t *head)
 {
 	size_t count = 0;
-
 	const listint_t *current_node = head;
-	while (current_node != NULL) {
+
+	while (current_node != NULL)
+	{
 		count++;
 		current_node = current_node->next;
 	}
-	return count;
+	return (count);
 }
