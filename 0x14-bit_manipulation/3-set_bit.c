@@ -1,4 +1,4 @@
-/*
+/**
  * File: 3-set_bit.c
  * Auth: Nyasimi Philip
  */
