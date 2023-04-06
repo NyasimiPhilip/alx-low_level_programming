@@ -6,11 +6,13 @@
 #include "main.h"
 int get_bit(unsigned long int n, unsigned int index)
 {
-	if (index >= 8 * sizeof(unsigned long int))
-	{
-		return (-1);
-	}
-	unsigned long int mask = 1UL << index;
+	unsigned long int mask = 1;
 
-	return( (n & mask) != 0);
+	if (index >= (sizeof(unsigned long int) * 8))
+		return (-1);
+
+	mask <<= index;
+	if (n & mask)
+		return (1);
+	return (0);
 }
