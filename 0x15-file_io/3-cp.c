@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stlib.h>
 
 /**
  * error_check - checks if files can be opened.
