@@ -1,6 +1,6 @@
 /*
  * File: 1-create_file.c
- * Auth: Nyasimi Phili
+ * Auth: Nyasimi Philip
  */
 #include "main.h"
 /**
