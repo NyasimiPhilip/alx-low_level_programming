@@ -1,9 +1,14 @@
 #include "main.h"
 #include <stdio.h>
+<<<<<<< HEAD
 #include <stdlib.h>
 #include <fcntl.h>
 #include <unistd.h>
 #include <sys/stat.h>
+=======
+#include <stlib.h>
+
+>>>>>>> 2860ac4f7520a8bac608ccb049b2eddb7edcd9df
 /**
  * error_check - checks if files can be opened.
  * @fd1: file descriptor of first file.
