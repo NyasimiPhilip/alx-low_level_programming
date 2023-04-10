@@ -1,14 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-<<<<<<< HEAD
 #include <stdlib.h>
-#include <fcntl.h>
-#include <unistd.h>
-#include <sys/stat.h>
-=======
-#include <stlib.h>
-
->>>>>>> 2860ac4f7520a8bac608ccb049b2eddb7edcd9df
 /**
  * error_check - checks if files can be opened.
  * @fd1: file descriptor of first file.
@@ -62,6 +54,7 @@ int main(int argc, char *argv[])
 	ssize_t read_len, write_len;
 	char buffer[1024];
 	mode_t file_perm;
+
 	check_num_args(argc);
 	fd_from = open(argv[1], O_RDONLY);
 	check_file_read((ssize_t) fd_from, argv[1], -1, -1);
@@ -82,5 +75,5 @@ int main(int argc, char *argv[])
 	close_from = close(fd_from);
 	check_fd_close(close_to, fd_to);
 	check_fd_close(close_from, fd_from);
-	return 0;
+	return (0);
 }
