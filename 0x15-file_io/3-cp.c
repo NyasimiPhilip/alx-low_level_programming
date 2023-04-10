@@ -21,12 +21,6 @@ void error_check(int fd1, int fd2, char *argv[])
 		exit(99);
 	}
 }
-/**
- * main - check the code for Holberton School students.
- * @argc: number of arguments.
- * @argv: arguments vector.
- * Return: Always 0.
- */
 int main(int argc, char *argv[])
 {
 	int fd1, fd2, err;
