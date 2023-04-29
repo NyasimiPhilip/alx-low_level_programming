@@ -1,9 +1,18 @@
-void print_elf_header(Elf64_Ehdr *header) {
-    int i;
+#include <stdio.h>
+#include <stdlib.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <string.h>
+#include <errno.h>
+#include <elf.h>
 
+void print_elf_header(Elf64_Ehdr *header) {
+  int i;
+  
     printf("ELF Header:\n");
 
     printf("  Magic:   ");
+    
     for (i = 0; i < EI_NIDENT; i++) {
         printf("%02x ", header->e_ident[i]);
     }
@@ -41,7 +50,7 @@ void print_elf_header(Elf64_Ehdr *header) {
             break;
     }
 
-    printf("  Version:                           %d\n", header->e_ident[EI_VERSION]);
+    printf("  Version:                           %d (current)\n", header->e_ident[EI_VERSION]);
 
     printf("  OS/ABI:                            ");
     switch (header->e_ident[EI_OSABI]) {
@@ -79,7 +88,7 @@ void print_elf_header(Elf64_Ehdr *header) {
             printf("OpenBSD\n");
             break;
         default:
-            printf("\n");
+            printf("Unknown OS/ABI\n");
             break;
     }
 
@@ -107,8 +116,9 @@ void print_elf_header(Elf64_Ehdr *header) {
             break;
     }
 
-    printf("  Entry point address:               0x%lx\n", (long)header->e_entry);
+    printf("  Entry point address:               0x%lx\n", header->e_entry);
 }
+
 int main(int argc, char **argv) {
     int fd;
     Elf64_Ehdr header;
