@@ -61,7 +61,7 @@ void print_elf_header(Elf64_Ehdr *header) {
             printf("HP-UX\n");
             break;
         case ELFOSABI_NETBSD:
-            printf("NetBSD\n");
+            printf("UNIX - NetBSD\n");
             break;
         case ELFOSABI_LINUX:
             printf("Linux\n");
