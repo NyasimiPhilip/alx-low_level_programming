@@ -1,8 +1,9 @@
 /**
- * File: 2-get_bit.c
- * Auth: Nyasimi Philip
- */
-
+ * get_bit - returns the value of the bit
+ * @n: is an unsigned long integer
+ * @index: is an unsigned integer
+ * Return: int
+ **/
 #include "main.h"
 int get_bit(unsigned long int n, unsigned int index)
 {
