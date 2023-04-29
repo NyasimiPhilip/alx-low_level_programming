@@ -1,6 +1,5 @@
 #include "main.h"
 /**
- * print_binary - Prints the binary representation of a number
  * power - Calculates the power of a number
  * @base: is the base number
  * @pow: is the exponent
@@ -16,7 +15,11 @@ unsigned long int power(unsigned int base, unsigned int pow)
 		num *= base;
 	return (num);
 }
-
+/**
+ * print_binary - Prints the binary representation of a number
+ * @num:  is an unsigned 64-bit integer
+ * Return: void
+ */
 void print_binary(unsigned long int num)
 {
 	unsigned long int divisor, result;
