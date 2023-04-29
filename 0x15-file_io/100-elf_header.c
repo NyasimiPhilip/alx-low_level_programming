@@ -1,91 +1,146 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <fcntl.h>
 #include <unistd.h>
-#include <elf.h>
-#include <sys/stat.h>
 #include <string.h>
 #include <errno.h>
-#ifdef __NetBSD__
-#include <sys/exec_elf.h>
-#endif
+#include <elf.h>
 
-int main(int argc, char** argv) {
-    const char* filename;
-    int fd, rc = 1;
-    struct stat stat_buf;
-    Elf64_Ehdr header;
-    const char* elf_data = "unknown";
+void print_elf_header(Elf64_Ehdr *header) {
+  int i;
+  
+    printf("ELF Header:\n");
 
-    if (argc != 2) {
-        fprintf(stderr, "usage: %s file\n", argv[0]);
-        return 1;
+    printf("  Magic:   ");
+    
+    for (i = 0; i < EI_NIDENT; i++) {
+        printf("%02x ", header->e_ident[i]);
     }
+    printf("\n");
 
-    filename = argv[1];
-
-    if ((fd = open(filename, O_RDONLY)) < 0) {
-        perror("open");
-        return 1;
-    }
-
-    if (fstat(fd, &stat_buf) < 0) {
-        perror("fstat");
-        goto out;
-    }
-
-    if (read(fd, &header, sizeof(header)) != sizeof(header)) {
-        perror("read");
-        goto out;
-    }
-
-    if (memcmp(header.e_ident, ELFMAG, SELFMAG) != 0) {
-        fprintf(stderr, "%s is not an ELF file\n", filename);
-        goto out;
-    }
-
-    switch (header.e_ident[EI_CLASS]) {
+    printf("  Class:                             ");
+    switch (header->e_ident[EI_CLASS]) {
+        case ELFCLASSNONE:
+            printf("Invalid class\n");
+            break;
         case ELFCLASS32:
-            elf_data = "32-bit";
+            printf("ELF32\n");
             break;
-
         case ELFCLASS64:
-            elf_data = "64-bit";
-            break;
-    }
-
-    printf("%s ELF %s %s\n", filename, elf_data,
-           header.e_ident[EI_DATA] == ELFDATA2MSB ? "big endian" : "little endian");
-
-    printf("entry point: %lx\n", header.e_entry);
-
-    printf("start of section headers: %ld (bytes into file)\n", header.e_shoff);
-
-    printf("number of section headers: %d\n", header.e_shnum);
-
-    printf("size of section headers: %d (bytes)\n", header.e_shentsize);
-
-    printf("start of program headers: %ld (bytes into file)\n", header.e_phoff);
-
-    printf("number of program headers: %d\n", header.e_phnum);
-
-    printf("size of program headers: %d (bytes)\n", header.e_phentsize);
-
-#ifdef __NetBSD__
-    switch (header.e_machine) {
-        case EM_NETBSD:
-            printf("This ELF file is compiled for NetBSD\n");
+            printf("ELF64\n");
             break;
         default:
-            printf("This ELF file is not compiled for NetBSD\n");
+            printf("Unknown class\n");
             break;
     }
-#else
-    printf("This ELF file is not compiled for NetBSD\n");
-#endif
 
-    rc = 0;
+    printf("  Data:                              ");
+    switch (header->e_ident[EI_DATA]) {
+        case ELFDATANONE:
+            printf("Invalid data encoding\n");
+            break;
+        case ELFDATA2LSB:
+            printf("2's complement, little endian\n");
+            break;
+        case ELFDATA2MSB:
+            printf("2's complement, big endian\n");
+            break;
+        default:
+            printf("Unknown data encoding\n");
+            break;
+    }
 
-out:
-    close(fd);
-    return rc;
+    printf("  Version:                           %d (current)\n", header->e_ident[EI_VERSION]);
+
+    printf("  OS/ABI:                            ");
+    switch (header->e_ident[EI_OSABI]) {
+        case ELFOSABI_SYSV:
+            printf("UNIX - System V\n");
+            break;
+        case ELFOSABI_HPUX:
+            printf("HP-UX\n");
+            break;
+        case ELFOSABI_NETBSD:
+            printf("NetBSD\n");
+            break;
+        case ELFOSABI_LINUX:
+            printf("Linux\n");
+            break;
+        case ELFOSABI_SOLARIS:
+            printf("Solaris\n");
+            break;
+        case ELFOSABI_AIX:
+            printf("AIX\n");
+            break;
+        case ELFOSABI_IRIX:
+            printf("IRIX\n");
+            break;
+        case ELFOSABI_FREEBSD:
+            printf("FreeBSD\n");
+            break;
+        case ELFOSABI_TRU64:
+            printf("Compaq TRU64 UNIX\n");
+            break;
+        case ELFOSABI_MODESTO:
+            printf("Novell Modesto\n");
+            break;
+        case ELFOSABI_OPENBSD:
+            printf("OpenBSD\n");
+            break;
+        default:
+            printf("Unknown OS/ABI\n");
+            break;
+    }
+
+    printf("  ABI Version:                       %d\n", header->e_ident[EI_ABIVERSION]);
+
+    printf("  Type:                              ");
+    switch (header->e_type) {
+        case ET_NONE:
+            printf("NONE (No file type)\n");
+            break;
+        case ET_REL:
+            printf("REL (Relocatable file)\n");
+            break;
+        case ET_EXEC:
+            printf("EXEC (Executable file)\n");
+            break;
+        case ET_DYN:
+            printf("DYN (Shared object file)\n");
+            break;
+        case ET_CORE:
+            printf("CORE (Core file)\n");
+            break;
+        default:
+            printf("Unknown file type\n");
+            break;
+    }
+
+    printf("  Entry point address:               0x%lx\n", header->e_entry);
+}
+
+int main(int argc, char **argv) {
+    int fd;
+    Elf64_Ehdr header;
+if (argc != 2) {
+    fprintf(stderr, "Usage: %s <ELF file>\n", argv[0]);
+    return 1;
+}
+
+fd = open(argv[1], O_RDONLY);
+if (fd == -1) {
+    fprintf(stderr, "Error opening file: %s\n", strerror(errno));
+    return 98;
+}
+
+if (read(fd, &header, sizeof(header)) != sizeof(header)) {
+    fprintf(stderr, "Error reading ELF header: %s\n", strerror(errno));
+    return 98;
+}
+
+print_elf_header(&header);
+
+close(fd);
+
+return 0;
 }
