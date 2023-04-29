@@ -6,12 +6,13 @@
 #include <errno.h>
 #include <elf.h>
 
-void print_elf_header(Elf32_Ehdr *header) {
-    int i;
-
+void print_elf_header(Elf64_Ehdr *header) {
+  int i;
+  
     printf("ELF Header:\n");
 
     printf("  Magic:   ");
+    
     for (i = 0; i < EI_NIDENT; i++) {
         printf("%02x ", header->e_ident[i]);
     }
@@ -60,31 +61,31 @@ void print_elf_header(Elf32_Ehdr *header) {
             printf("HP-UX\n");
             break;
         case ELFOSABI_NETBSD:
-            printf("UNIX - NetBSD\n");
+            printf("NetBSD\n");
             break;
         case ELFOSABI_LINUX:
-            printf("UNIX - Linux\n");
+            printf("Linux\n");
             break;
         case ELFOSABI_SOLARIS:
-            printf("UNIX - Solaris\n");
+            printf("Solaris\n");
             break;
         case ELFOSABI_AIX:
-            printf("UNIX - AIX\n");
+            printf("AIX\n");
             break;
         case ELFOSABI_IRIX:
-            printf("UNIX - IRIX\n");
+            printf("IRIX\n");
             break;
         case ELFOSABI_FREEBSD:
-            printf("UNIX - FreeBSD\n");
+            printf("FreeBSD\n");
             break;
         case ELFOSABI_TRU64:
-            printf("UNIX - TRU64\n");
+            printf("Compaq TRU64 UNIX\n");
             break;
         case ELFOSABI_MODESTO:
-            printf("Novell - Modesto\n");
+            printf("Novell Modesto\n");
             break;
         case ELFOSABI_OPENBSD:
-            printf("UNIX - OpenBSD\n");
+            printf("OpenBSD\n");
             break;
         default:
             printf("Unknown OS/ABI\n");
@@ -115,64 +116,31 @@ void print_elf_header(Elf32_Ehdr *header) {
             break;
     }
 
-    printf("  Entry point address:               0x%08x\n", header->e_entry);
+    printf("  Entry point address:               0x%lx\n", header->e_entry);
 }
 
 int main(int argc, char **argv) {
-    
-    FILE *fp;
-    unsigned char *buffer;
-    long fileLen;
-    int i;
+    int fd;
+    Elf64_Ehdr header;
+if (argc != 2) {
+    fprintf(stderr, "Usage: %s <ELF file>\n", argv[0]);
+    return 1;
+}
 
-  
-    fp = fopen(argv[1], "rb");
-    if (!fp) {
-        perror("Unable to open file");
-        return 1;
-    }
+fd = open(argv[1], O_RDONLY);
+if (fd == -1) {
+    fprintf(stderr, "Error opening file: %s\n", strerror(errno));
+    return 98;
+}
 
-   
-    fseek(fp, 0, SEEK_END);
-    fileLen = ftell(fp);
-    rewind(fp);
+if (read(fd, &header, sizeof(header)) != sizeof(header)) {
+    fprintf(stderr, "Error reading ELF header: %s\n", strerror(errno));
+    return 98;
+}
 
-    
-    buffer = (unsigned char *)malloc(fileLen * sizeof(unsigned char));
-    if (!buffer) {
-        perror("Memory error");
-        fclose(fp);
-        return 1;
-    }
+print_elf_header(&header);
 
-  
-    if (fread(buffer, fileLen, 1, fp) != 1) {
-        perror("Reading error");
-        fclose(fp);
-        free(buffer);
-        return 1;
-    }
+close(fd);
 
-   
-    fclose(fp);
-
-  
-    printf("ELF Header:\n");
-    for (i = 0; i < 16; i++) {
-        printf("  %02x", buffer[i]);
-    }
-    printf("\n");
-    printf("  Class:                             ELF32\n");
-    printf("  Data:                              2's complement, little endian\n");
-    printf("  Version:                           1 (current)\n");
-    printf("  OS/ABI:                            UNIX - NetBSD\n");
-    printf("  ABI Version:                       0\n");
-    printf("  Type:                              EXEC (Executable file)\n");
-    printf("  Entry point address:               0x%08x\n", *((unsigned int *)(buffer + 24)));
-    printf("%d\n", buffer[27]);
-
-   
-    free(buffer);
-
-    return 0;
+return 0;
 }
