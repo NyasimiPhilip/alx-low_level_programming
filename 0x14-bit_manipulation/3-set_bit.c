@@ -1,8 +1,9 @@
 /**
- * File: 3-set_bit.c
- * Auth: Nyasimi Philip
- */
-
+ * set_bit - Sets the bit at the given index
+ * @n: is a pointer to an unsigned 64-bit integer
+ * @index: is an unsigned integer
+ * Return: int
+ **/
 #include "main.h"
 
 int set_bit(unsigned long int *n, unsigned int index)
