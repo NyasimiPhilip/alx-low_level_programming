@@ -1,12 +1,9 @@
 #include "main.h"
-/*
- * Appends text to a file.
- * Parameters:
- * filename: the name of the file to append to
- * text_content: the text to append to the file
- * Returns:
- *  1 on success
- * -1 on failure
+/**
+ * append_text_to_file - appends text to a file
+ * @filename: a pointer to a string
+ * @text_content: a pointer to a string
+ * Return: int
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
