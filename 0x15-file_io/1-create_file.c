@@ -1,13 +1,10 @@
-/*
- * File: 1-create_file.c
- * Auth: Nyasimi Philip
- */
 #include "main.h"
 /**
- * Create a new file with the specified `filename` and write the contents of
- * `text_content` to it. If `text_content` is `NULL`, the file will be empty.
- * Returns 1 on success, or -1 on error.
- */
+ * create_file - Creates a file with given text content
+ * @filename: string specifying the file name
+ * @text_content: is a string
+ * Return: int
+ **/
 int create_file(const char *filename, char *text_content)
 {
 	int fd, bytes_written, text_len = 0;
