@@ -2,11 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * error_check - checks if files can be opened.
- * @fd1: file descriptor of first file.
- * @fd2: file descriptor of second file.
- * @argv: arguments vector.
- * Return: no return.
+ * check_num_args - Checks the number of arguments
+ * @num_args: number of command-line arguments
+ * Return: void
  */
 void check_num_args(int num_args)
 {
@@ -16,6 +14,14 @@ void check_num_args(int num_args)
 		exit(97);
 	}
 }
+/**
+ * check_file_read - check file read errors
+ * @check: result of a file read operation
+ * @file_from: name of the source file
+ * @fd_from: file descriptor of the source file
+ * @fd_to: file descriptor of the destination file
+ * Return: void
+ **/
 void check_file_read(ssize_t check, char *file_from, int fd_from, int fd_to)
 {
 	if (check == -1)
@@ -28,6 +34,14 @@ void check_file_read(ssize_t check, char *file_from, int fd_from, int fd_to)
 		exit(98);
 	}
 }
+/**
+ * check_file_write - Checks for file write error
+ * @check: result of write() function call
+ * @file_to: name of destination file being written to
+ * @fd_from: file descriptor of source file being read from
+ * @fd_to: file descriptor of destination file being written to
+ * Return: void
+ */
 void check_file_write(ssize_t check, char *file_to, int fd_from, int fd_to)
 {
 	if (check == -1)
@@ -40,6 +54,12 @@ void check_file_write(ssize_t check, char *file_to, int fd_from, int fd_to)
 		exit(99);
 	}
 }
+/**
+ * check_fd_close - check if file descriptor was closed
+ * @check: an integer to check for error
+ * @fd: an integer file descriptor
+ * Return: void
+ */
 void check_fd_close(int check, int fd)
 {
 	if (check == -1)
@@ -48,6 +68,12 @@ void check_fd_close(int check, int fd)
 		exit(100);
 	}
 }
+/**
+ * main - copies the contents of one file to another
+ * @argc: specifies the name of the file
+ * @argv: array
+ * Return: int
+ */
 int main(int argc, char *argv[])
 {
 	int fd_from, fd_to, close_to, close_from;
