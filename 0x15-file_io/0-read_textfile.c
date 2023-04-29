@@ -1,9 +1,11 @@
 #include "main.h"
-#include <stdlib.h>/**
- * Read up to `letters` bytes from the file `filename` and write the contents
- * to the standard output. Returns the number of bytes read and written, or
- * 0 on error.
- */
+#include <stdlib.h>
+/**
+ * read_textfile - Reads and writes a file's contents to the console
+ * @filename: is a string specifying the file name
+ * @letters: number of characters to read
+ * Return: int
+ **/
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
