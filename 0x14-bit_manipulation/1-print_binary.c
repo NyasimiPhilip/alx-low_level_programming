@@ -1,7 +1,10 @@
 #include "main.h"
 /**
- * print_binary - Prints the binary representation of a number.
- * @n: The number to be printed in binary(1 or 0).
+ * print_binary - Prints the binary representation of a number
+ * power - Calculates the power of a number
+ * @base: is the base number
+ * @pow: is the exponent
+ * Return: int
  */
 unsigned long int power(unsigned int base, unsigned int pow)
 {
