@@ -7,15 +7,15 @@
  * @head: The head of the dlistint_t list. *
  * Return: The number of nodes in the list.
  */
-size_t count_and_print_dlistint(const dlistint_t *head)
+size_t print_dlistint(const dlistint_t *h)
 {
   size_t nodeCount = 0;
 
-  while (head)
+  while (h)
   {
     nodeCount++;
-    printf("%d\n", head->n);
-    head = head->next;
+    printf("%d\n", h->n);
+    h = h->next;
   }
   return nodeCount;
 }
