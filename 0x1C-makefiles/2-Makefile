@@ -1,0 +1,26 @@
+# Compiler
+CC = gcc
+
+# Source files
+SRC = main.c school.c
+
+# Object files (derived from source files)
+OBJ = $(SRC:.c=.o)
+
+# Executable name
+NAME = school
+
+# Default target: build the executable
+all: $(NAME)
+
+# Build the executable
+$(NAME): $(OBJ)
+	$(CC) $(OBJ) -o $@
+
+# Build object files from source files
+%.o: %.c
+	$(CC) -c $< -o $@
+
+# Clean up generated files
+clean:
+	rm -f $(OBJ) $(NAME)
