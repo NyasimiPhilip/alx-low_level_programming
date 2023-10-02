@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *main - print _pu  tchar
- *Description: is written by mbah
+ *Description: 
  *Return: 0 (Success)
  */
 int main(void)
