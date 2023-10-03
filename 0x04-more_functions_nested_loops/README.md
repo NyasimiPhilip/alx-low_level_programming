@@ -1,8 +1,3 @@
-<head>
-    <meta charset="UTF-8">
-    <title>Tasks 📃</title>
-</head>
-
 <body>
     <h1>Tasks 📃</h1>
     <h2>Task 0: isupper</h2>
