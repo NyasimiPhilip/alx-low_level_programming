@@ -1,4 +1,4 @@
- <h1>C Programming Tasks</h1>
+ <h1>0x06-pointers_arrays_strings</h1>
     <h2>Task 1: strcat</h2>
     <p>
         Write a function that concatenates two strings.
