@@ -2,7 +2,7 @@
 <h2>Tasks</h2>
 <ul>
     <li>
-        <h3>Task 0: Positive anything is better than negative nothing</h3> <br>
+        <h3>Task 0: Positive anything is better than negative nothing</h3>
             <h4><b>0-positive_or_negative.c:</b> C program that prints whether a randomly generated number is positive or negative, followed by a new line.</h4>
     </li>
     <li>
