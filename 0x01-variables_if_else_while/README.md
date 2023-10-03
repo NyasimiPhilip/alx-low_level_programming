@@ -4,21 +4,12 @@
         <li>
             <h3>Task 0: Positive anything is better than negative nothing</h3>
             <p><b>0-positive_or_negative.c:</b> C program that prints whether a randomly generated number is positive or negative, followed by a new line:</p>
-            <ul>
-                <li>Completion of this source code.</li>
-                <li>Stores a different random number every time the program is run.</li>
-                <li>Prints the number followed by "is positive" if the number is greater than 0, "is zero" if the number is zero, or "is negative" if the number is less than 0.</li>
-            </ul>
-        </li>
+              </li>
         <li>
             <h3>Task 1: The last digit</h3>
             <p><b>1-last_digit.c:</b> C program that prints the last digit of a randomly generated number, followed by a new line:</p>
             <ul>
-                <li>Completion of this source code.</li>
-                <li>Stores a different value every time the program is run.</li>
-                <li>Prints the string "Last digit of [number] is [last_digit]" and is followed by "greater than 5" if the digit is greater than 5, "0" if the digit is 0, or "less than 6 and not 0" if the digit is less than 6 and not 0.</li>
-            </ul>
-        </li>
+      </li>
         <li>
             <h3>Task 2: I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game</h3>
             <p><b>2-print_alphabet.c:</b> C program that prints the alphabet in lowercase, followed by a new line, using only the putchar function exactly twice.</p>
