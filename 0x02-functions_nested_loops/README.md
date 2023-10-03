@@ -1,45 +1,20 @@
-Project done during **Full Stack Software Engineering studies** at **ALX School**. It aims to learn about header files, functions, loops and nested loops in **C language**.
+Project done during **Full Stack Software Engineering certification program** at **ALX School**. It aims to learn about header files, functions, loops and nested loops in **C language**.
 		
 ## Files
 		
-All of the following files are programs written in C:
-		
-
-		
-| Filename | Description |
-		
-| -------- | ----------- |
-		
-| `0-Putchar.c` | Prints `Putchar` |
-		
-| `1-alphabet.c` | Prints the alphabet in lowercase |
-		
-| `2-print_alphabet_x10.c` | Prints 10 times the alphabet, in lowercase |
-		
-| `3-islower.c` | Checks for lowercase character |
-		
-| `4-isalpha.c` | Checks for alphabetic character |
-		
-| `5-sign.c` | Prints the sign of a number |
-		
-| `6-abs.c` | Computes the absolute value of an integer |
-		
-| `7-print_last_digit.c` | Prints the last digit of a number |
-		
-| `8-24_hours.c` | Prints every minute of the day |
-		
-| `9-times_table.c` | Prints the 9 times table, starting with 0 |
-		
-| `10-add.c` | Adds two integers and returns the result |
-		
-| `11-print_to_98.c` | Prints all natural numbers from `n` to `98` |
-		
-| `100-times_table.c` | Prints the `n` times table, starting with 0 |
-		
-| `101-natural.c` | Computes and prints the sum of all the multiplies of `3` or `5` below `1024` |
-		
-| `102-fibonacci.c` | Prints the first 50 Fibonacci numbers, starting with `1` and `2` |
-		
-| `103-fibonacci.c` | Finds and prints the sum of the even-valued terms |
-		
-| `104-fibonacci.c` | Finds and prints the first 98 Fibonacci numbers |
+ <ul>
+        <li><b>0-Putchar.c:</b> Prints <i>Putchar</i></li>
+        <li><b>1-alphabet.c:</b> Prints the alphabet in lowercase</li>
+        <li><b>2-print_alphabet_x10.c:</b> Prints 10 times the alphabet, in lowercase</li>
+        <li><b>3-islower.c:</b> Checks for lowercase character</li>
+        <li><b>4-isalpha.c:</b> Checks for alphabetic character</li>
+        <li><b>5-sign.c:</b> Prints the sign of a number</li>
+        <li><b>6-abs.c:</b> Computes the absolute value of an integer</li>
+        <li><b>7-print_last_digit.c:</b> Prints the last digit of a number</li>
+        <li><b>8-24_hours.c:</b> Prints every minute of the day</li>
+        <li><b>9-times_table.c:</b> Prints the 9 times table, starting with 0</li>
+        <li><b>10-add.c:</b> Adds two integers and returns the result</li>
+        <li><b>11-print_to_98.c:</b> Prints all natural numbers from <i>n</i> to 98</li>
+        <li><b>100-times_table.c:</b> Prints the <i>n</i> times table, starting with 0</li>
+        <li><b>101-natural.c:</b> Computes and prints the sum of all the multiples of 3 or 5 below 1024</li>
+    </ul>
