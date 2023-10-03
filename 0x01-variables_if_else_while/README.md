@@ -3,8 +3,7 @@
     <ul>
         <li>
             <h3>Task 0: Positive anything is better than negative nothing</h3>
-            <p><b>0-positive_or_negative.c:</b> C program that prints whether a randomly generated number is positive or negative, followed by a new line:</p>
-              </li>
+            <p><b>0-positive_or_negative.c:</b> C program that prints whether a randomly generated number is positive or negative, followed by a new line:</p></li>
         <li>
             <h3>Task 1: The last digit</h3>
             <p><b>1-last_digit.c:</b> C program that prints the last digit of a randomly generated number, followed by a new line:</p>
