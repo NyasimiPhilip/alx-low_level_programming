@@ -1,5 +1,3 @@
-Project done during **Full Stack Software Engineering certification program** at **ALX School**. It aims to learn about header files, functions, loops and nested loops in **C language**.
-		
 ## Files
 		
  <ul>
