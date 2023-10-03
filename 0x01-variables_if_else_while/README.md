@@ -11,12 +11,12 @@
             <ul>
       </li>
     <li>
-            <h3>Task 2: I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game</h3>
-            <p><b>2-print_alphabet.c:</b> C program that prints the alphabet in lowercase, followed by a new line, using only the putchar function exactly twice.</p>
+        <h3>Task 2: I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game</h3>
+        <p><b>2-print_alphabet.c:</b> C program that prints the alphabet in lowercase, followed by a new line, using only the putchar function exactly twice.</p>
      </li>
     <li>
-            <h3>Task 3: When I was having that alphabet soup, I never thought that it would pay off</h3>
-            <p><b>3-print_alphabets.c:</b> C program that prints the alphabet in lowercase, then in uppercase, followed by a new line, using only the putchar function exactly three times.</p>
+        <h3>Task 3: When I was having that alphabet soup, I never thought that it would pay off</h3>
+        <p><b>3-print_alphabets.c:</b> C program that prints the alphabet in lowercase, then in uppercase, followed by a new line, using only the putchar function exactly three times.</p>
     </li>
     <li>
             <h3>Task 4: alphABET</h3>
