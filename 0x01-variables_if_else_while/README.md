@@ -10,18 +10,18 @@
             <p><b>1-last_digit.c:</b> C program that prints the last digit of a randomly generated number, followed by a new line:</p>
             <ul>
       </li>
-        <li>
+    <li>
             <h3>Task 2: I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game</h3>
             <p><b>2-print_alphabet.c:</b> C program that prints the alphabet in lowercase, followed by a new line, using only the putchar function exactly twice.</p>
-        </li>
-        <li>
+     </li>
+    <li>
             <h3>Task 3: When I was having that alphabet soup, I never thought that it would pay off</h3>
             <p><b>3-print_alphabets.c:</b> C program that prints the alphabet in lowercase, then in uppercase, followed by a new line, using only the putchar function exactly three times.</p>
-        </li>
-        <li>
+    </li>
+    <li>
             <h3>Task 4: alphABET</h3>
             <p><b>4-print_alphabt.c:</b> C program that prints the alphabet in lowercase except for the letters 'q' and 'e', followed by a new line, using only the putchar function exactly twice.</p>
-        </li>
+  </li>
         <li>
             <h3>Task 5: Numbers</h3>
             <p><b>5-print_numbers.c:</b> C program that prints all single-digit numbers of base 10 starting from 0, followed by a new line.</p>
