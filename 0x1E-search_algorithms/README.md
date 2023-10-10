@@ -1,76 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C - Search Algorithms</title>
-</head>
-<body>
-    <h1>C - Search Algorithms</h1>
-    <p>This was my Holberton School project on search algorithms. I implemented various types of search algorithms and stated the corresponding space/time complexities for each.</p>
-
-    <h2>Tests ✔️</h2>
-    <p>tests: Folder of test files for all tasks. Provided by Holberton School.</p>
-
-    <h2>Helper Files 🙌</h2>
-    <p>listint: Folder of helper files for task 12, singly linked list jump search.</p>
-    <ul>
-        <li>create_list.c: C function that creates a listint_t singly linked list.</li>
-        <li>free_list.c: C function that frees a listint_t singly linked list.</li>
-        <li>print_list.c: C function that prints the contents of a listint_t singly linked list.</li>
-    </ul>
-    <p>skiplist: Folder of helper files for task 13, singly skipped list jump search.</p>
-    <ul>
-        <li>create_skiplist.c: C function that creates a skiplist_t singly skipped list.</li>
-        <li>free_skiplist.c: C function that frees a skiplist_t singly skipped list.</li>
-        <li>print_skiplist.c: C function that prints the contents of a skiplist_t singly skipped list.</li>
-    </ul>
-
-    <h2>Header File 📁</h2>
-    <p>search_algos.h: Header file containing definitions and prototypes for all types and functions written for the project.</p>
-
-    <h2>Data Structures</h2>
-    <pre>
-        <code>
-            /**
-             * struct listint_s - singly linked list
-             *
-             * @n: Integer
-             * @index: Index of the node in the list
-             * @next: Pointer to the next node
-             *
-             * Description: singly linked list node structure
-             * for Holberton project
-             */
-            typedef struct listint_s
-            {
-                int n;
-                size_t index;
-                struct listint_s *next;
-            } listint_t;
-
-            /**
-             * struct skiplist_s - Singly linked list with an express lane
-             *
-             * @n: Integer
-             * @index: Index of the node in the list
-             * @next: Pointer to the next node
-             * @express: Pointer to the next node in the express lane
-             *
-             * Description: singly linked list node structure with an express lane
-             * for Holberton project
-             */
-            typedef struct skiplist_s
-            {
-                int n;
-                size_t index;
-                struct skiplist_s *next;
-                struct skiplist_s *express;
-            } skiplist_t;
-        </code>
-    </pre>
-
-    <h2>Function Prototypes</h2>
+<h2>Function Prototypes</h2>
     <table>
         <thead>
             <tr>
@@ -113,7 +41,6 @@
             </tr>
         </tbody>
     </table>
-
     <h2>Tasks 📃</h2>
     <ol>
         <li>
@@ -148,7 +75,6 @@
                     int **allocate_map(int n, int m)
                     {
                         int **map;
-
                         map = malloc(sizeof(int *) * n);
                         for (size_t i = 0; i < n; i++)
                         {
