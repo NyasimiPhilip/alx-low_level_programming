@@ -7,11 +7,13 @@
  * Return: If the value is not present or the array is NULL, -1.
  * Otherwise, the first index where the value is located.
  */
-int linear_search(const int *array, size_t size, int value)
+int linear_search(int *array, size_t size, int value)
 {
+	size_t i;
+
 	if (array == NULL)
 		return (-1);
-	for (size_t i = 0; i < size; i++)
+	for (i = 0; i < size; i++)
 	{
 		/* Print the value checked at each index */
 		printf("Value checked array[%lu] = [%d]\n", i, array[i]);
