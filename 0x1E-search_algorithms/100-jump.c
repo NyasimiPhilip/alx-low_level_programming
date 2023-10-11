@@ -1,4 +1,5 @@
 #include "search_algos.h"
+#include <math.h>
 /**
  * jump_search - jump search algo
  * @array: array passed
