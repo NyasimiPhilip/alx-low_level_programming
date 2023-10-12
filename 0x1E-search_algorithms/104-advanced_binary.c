@@ -23,9 +23,9 @@ int binary_recursion(int *array, int value, int low, int high)
 	if (array[middle] == value && (middle == low || array[middle - 1] != value))
 		return (middle);
 	if (array[middle] >= value)
-		return binary_recursion(array, value, low, middle);
+		return (binary_recursion(array, value, low, middle));
 	else
-		return binary_recursion(array, value, middle + 1, high);
+		return (binary_recursion(array, value, middle + 1, high));
 }
 /**
  * advanced_binary - Searches for a value in a sorted array
