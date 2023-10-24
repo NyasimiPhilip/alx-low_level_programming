@@ -1,4 +1,7 @@
 <h1>Tasks 📃</h1>
+   <h1>C - Even more pointers, arrays, and strings</h1>
+    <p>In this project, I learned about what and how to use pointers to pointers and multidimensional arrays in C as well as the most common C standard library functions to manipulate strings.</p>
+    <h2>Tests</h2>
     <ul>
         <li>
             <h2>Task 0: isupper</h2>
@@ -53,16 +56,4 @@
         <li>
             <h2>Task 10: Triangles</h2>
             <p><strong>File:</strong> 10-print_triangle.c</p>
-            <p><strong>Description:</strong> C function that prints a triangle using the # character, followed by a new line. If the function receives size input of zero or less, only a new line is printed.</p>
-        </li>
-        <li>
-            <h2>Task 11: The problem of distinguishing prime numbers from composite numbers...</h2>
-            <p><strong>File:</strong> 100-prime_factor.c</p>
-            <p><strong>Description:</strong> C program that prints the largest prime factor of the number 612852475143, followed by a new line.</p>
-        </li>
-        <li>
-            <h2>Task 12: Numbers have life; they're not just symbols on paper</h2>
-            <p><strong>File:</strong> 101-print_number.c</p>
-            <p><strong>Description:</strong> C function that prints an integer without using long, arrays, pointers, or hard-coded special values.</p>
-        </li>
-    </ul>
+            <p><strong>Description:</strong> C function that prints a triangle using the # character, followed by a new line. If the function receives
