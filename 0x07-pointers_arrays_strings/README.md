@@ -2,7 +2,7 @@
     <p>In this project, I learned about what and how to use pointers to pointers and multidimensional arrays in C as well as the most common C standard library functions to manipulate strings.</p>
     <h2>Tests</h2>
     <ul>
-        <li>tests: Folder of test files. Provided by Holberton School.</li>
+        <li>tests: the main.c to be compiled with actual implementation of the functions.</li>
     </ul>
     <h2>Helper File</h2>
     <ul>
