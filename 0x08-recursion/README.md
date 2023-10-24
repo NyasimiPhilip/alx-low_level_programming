@@ -1,44 +1,49 @@
  <h1>C - Recursion</h1>
  <table>
         <tr>
+            <th>Number</th>
             <th>File</th>
             <th>Prototype</th>
         </tr>
         <tr>
+            <td>1</td>
             <td>0-puts_recursion.c</td>
             <td>void _puts_recursion(char *s);</td>
         </tr>
         <tr>
+            <td>2</td>
             <td>1-print_rev_recursion.c</td>
             <td>void _print_rev_recursion(char *s);</td>
         </tr>
         <tr>
+            <td>3</td>
             <td>2-strlen_recursion.c</td>
             <td>int _strlen_recursion(char *s);</td>
         </tr>
         <tr>
+            <td>4</td>
             <td>3-factorial.c</td>
             <td>int factorial(int n);</td>
         </tr>
         <tr>
+            <td>5</td>
             <td>4-pow_recursion.c</td>
             <td>int _pow_recursion(int x, int y);</td>
         </tr>
         <tr>
+            <td>6</td>
             <td>5-sqrt_recursion.c</td>
             <td>int _sqrt_recursion(int n);</td>
         </tr>
         <tr>
+            <td>7</td>
             <td>6-is_prime_number.c</td>
             <td>int is_prime_number(int n);</td>
         </tr>
         <tr>
+            <td>8</td>
             <td>7-is_palindrome.c</td>
             <td>int is_palindrome(char *s);</td>
-        </tr>
-        <tr>
-            <td>100-wildcmp.c</td>
-            <td>int wildcmp(char *s1, char *s2);</td>
         </tr>
     </table>
     <ul>
