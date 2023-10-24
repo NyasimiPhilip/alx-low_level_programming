@@ -1,88 +1,66 @@
-README
-
-#C - Even more pointers, arrays and strings
-
-#TASKS.
-
-0. memset
-
-Write a function that fills memory with a constant byte.
-
-Prototype: char *_memset(char *s, char b, unsigned int n);
-The _memset() function fills the first n bytes of the memory area pointed to by s with the constant byte b
-Returns a pointer to the memory area s
-
-1. memcpy
-
-Write a function that copies memory area.
-
-Prototype: char *_memcpy(char *dest, char *src, unsigned int n);
-The _memcpy() function copies n bytes from memory area src to memory area dest
-Returns a pointer to dest
-FYI: The standard library provides a similar function: memcpy. Run man memcpy to learn more.
-
-2. strchr
-
-Write a function that locates a character in a string.
-
-Prototype: char *_strchr(char *s, char c);
-Returns a pointer to the first occurrence of the character c in the string s, or NULL if the character is not found
-FYI: The standard library provides a similar function: strchr. Run man strchr to learn more.
-
-3. strspn
-
-Write a function that gets the length of a prefix substring.
-
-Prototype: unsigned int _strspn(char *s, char *accept);
-Returns the number of bytes in the initial segment of s which consist only of bytes from accept
-FYI: The standard library provides a similar function: strspn. Run man strspn to learn more.
-
-4. strpbrk
-
-Write a function that searches a string for any of a set of bytes.
-
-Prototype: char *_strpbrk(char *s, char *accept);
-The _strpbrk() function locates the first occurrence in the string s of any of the bytes in the string accept
-Returns a pointer to the byte in s that matches one of the bytes in accept, or NULL if no such byte is found
-FYI: The standard library provides a similar function: strpbrk. Run man strpbrk to learn more.
-
-5. strstr
-
-Write a function that locates a substring.
-
-Prototype: char *_strstr(char *haystack, char *needle);
-The _strstr() function finds the first occurrence of the substring needle in the string haystack. The terminating null bytes (\0) are not compared
-Returns a pointer to the beginning of the located substring, or NULL if the substring is not found.
-FYI: The standard library provides a similar function: strstr. Run man strstr to learn more.
-
-
-6. Chess is mental torture
-
-Write a function that prints the chessboard.
-
-Prototype: void print_chessboard(char (*a)[8]);
-
-7. The line of life is a ragged diagonal between duty and desire
-
-Write a function that prints the sum of the two diagonals of a square matrix of integers.
-
-Prototype: void print_diagsums(int *a, int size);
-Format: see example
-You are allowed to use the standard library
-Note that in the following example we are casting an int[][] into an int*. This is not something you should do. The goal here is to make sure you understand how an array of array is stored in memory.
-
-8. Double pointer, double fun
-
-Write a function that sets the value of a pointer to a char.
-
-Prototype: void set_string(char **s, char *to);
-
-9. My primary goal of hacking was the intellectual curiosity, the seduction of a
-
-Create a file that contains the password for the crackme2 executable.
-
-Your file should contain the exact password, no new line, no extra space
-ltrace, ldd, gdb and objdump can help
-You may need to install the openssl library to run the crakme2 program: sudo apt install libssl-dev
-Edit the source list sudo nano /etc/apt/sources.list to add the following line: deb http://security.ubuntu.com/ubuntu xenial-security main Then sudo apt update and sudo apt install libssl1.0.0
-
+<h1>C - Even more pointers, arrays, and strings</h1>
+    <p>In this project, I learned about what and how to use pointers to pointers and multidimensional arrays in C as well as the most common C standard library functions to manipulate strings.</p>
+    <h2>Tests</h2>
+    <ul>
+        <li>tests: Folder of test files. Provided by Holberton School.</li>
+    </ul>
+    <h2>Helper File</h2>
+    <ul>
+        <li>_putchar.c: C function that writes a character to stdout.</li>
+    </ul>
+    <h2>Header File</h2>
+    <ul>
+        <li>main.h: Header file containing prototypes for all functions written in the project.</li>
+    </ul>
+    <h2>Tasks</h2>
+    <ol>
+        <li>
+            <h3>0. memset</h3>
+            <p>0-memset.c: C function that fills the first n bytes of memory area pointed to by s with the constant byte b.</p>
+            <p>Prototype: <code>char *_memset(char *s, char b, unsigned int n);</code></p>
+        </li>
+        <li>
+            <h3>1. memcpy</h3>
+            <p>1-memcpy.c: C function that copies n bytes from memory area src to memory area dest.</p>
+            <p>Prototype: <code>char *_memcpy(char *dest, char *src, unsigned int n);</code></p>
+        </li>
+        <li>
+            <h3>2. strchr</h3>
+            <p>2-strchr.c: C function that returns a pointer to the first occurrence of the character c in the string s.</p>
+            <p>Prototype: <code>char *_strchr(char *s, char c);</code></p>
+        </li>
+        <li>
+            <h3>3. strspn</h3>
+            <p>3-strspn.c: C function that returns the number of bytes in the initial segment of memory area s which consists only of bytes from a substring accept.</p>
+            <p>Prototype: <code>unsigned int _strspn(char *s, char *accept);</code></p>
+        </li>
+        <li>
+            <h3>4. strpbrk</h3>
+            <p>4-strpbrk.c: C function that locates the first occurrence in a string s of any of the bytes in a string accept.</p>
+            <p>Prototype: <code>char *_strpbrk(char *s, char *accept);</code></p>
+        </li>
+        <li>
+            <h3>5. strstr</h3>
+            <p>5-strstr.c: C function that finds the first occurrence of a substring needle in a string haystack.</p>
+            <p>Prototype: <code>char *_strstr(char *haystack, char *needle);</code></p>
+        </li>
+        <li>
+            <h3>6. Chess is mental torture</h3>
+            <p>7-print_chessboard.c: C function that prints the chessboard.</p>
+            <p>Prototype: <code>void print_chessboard(char (*a)[8]);</code></p>
+        </li>
+        <li>
+            <h3>7. The line of life is a ragged diagonal between duty and desire</h3>
+            <p>8-print_diagsums.c: C function that prints the sum of the two diagonals of a square matrix of integers.</p>
+            <p>Prototype: <code>void print_diagsums(int *a, int size);</code></p>
+        </li>
+        <li>
+            <h3>8. Double pointer, double fun</h3>
+            <p>9-set_string.c: C function that sets the value of a pointer to a char.</p>
+            <p>Prototype: <code>void set_string(char **s, char *to);</code></p>
+        </li>
+        <li>
+            <h3>9. My primary goal of hacking was the intellectual curiosity, the seduction of adventure</h3>
+            <p>101-crackme_password: File containing the password for the crackme2 executable.</p>
+        </li>
+    </ol>
