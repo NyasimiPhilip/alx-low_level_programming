@@ -1,6 +1,6 @@
   <h1>C - Variables, if, else, while</h1>
     <h2>Tasks</h2>
-    <ol>
+    <ul>
         <li>
             <h3>Task 0: Positive anything is better than negative nothing</h3>
             <p><code>0-positive_or_negative.c:</code> C program that prints whether a randomly generated number is positive or negative, followed by a new line.</p>
@@ -57,4 +57,4 @@
             <h3>Task 13: Software is eating the World</h3>
             <p><code>102-print_comb5.c:</code> C program that prints all possible combinations of two-digit numbers using only the putchar function exactly eight times without any variables of type char.</p>
         </li>
-    </ol>
+    </ul>
