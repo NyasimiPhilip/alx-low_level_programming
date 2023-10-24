@@ -1,4 +1,46 @@
  <h1>C - Recursion</h1>
+ <table>
+        <tr>
+            <th>File</th>
+            <th>Prototype</th>
+        </tr>
+        <tr>
+            <td>0-puts_recursion.c</td>
+            <td>void _puts_recursion(char *s);</td>
+        </tr>
+        <tr>
+            <td>1-print_rev_recursion.c</td>
+            <td>void _print_rev_recursion(char *s);</td>
+        </tr>
+        <tr>
+            <td>2-strlen_recursion.c</td>
+            <td>int _strlen_recursion(char *s);</td>
+        </tr>
+        <tr>
+            <td>3-factorial.c</td>
+            <td>int factorial(int n);</td>
+        </tr>
+        <tr>
+            <td>4-pow_recursion.c</td>
+            <td>int _pow_recursion(int x, int y);</td>
+        </tr>
+        <tr>
+            <td>5-sqrt_recursion.c</td>
+            <td>int _sqrt_recursion(int n);</td>
+        </tr>
+        <tr>
+            <td>6-is_prime_number.c</td>
+            <td>int is_prime_number(int n);</td>
+        </tr>
+        <tr>
+            <td>7-is_palindrome.c</td>
+            <td>int is_palindrome(char *s);</td>
+        </tr>
+        <tr>
+            <td>100-wildcmp.c</td>
+            <td>int wildcmp(char *s1, char *s2);</td>
+        </tr>
+    </table>
     <ul>
         <li>
             <h4><a href="0-puts_recursion.c">0. She locked away a secret, deep inside herself, something she once knew to be true... but chose to forget</a></h4>
