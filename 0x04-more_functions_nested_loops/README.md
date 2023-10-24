@@ -57,3 +57,14 @@
             <h2>Task 10: Triangles</h2>
             <p><strong>File:</strong> 10-print_triangle.c</p>
             <p><strong>Description:</strong> C function that prints a triangle using the # character, followed by a new line. If the function receives
+            <li>
+            <h2>Task 11: The problem of distinguishing prime numbers from composite numbers...</h2>
+            <p><strong>File:</strong> 100-prime_factor.c</p>
+            <p><strong>Description:</strong> C program that prints the largest prime factor of the number 612852475143, followed by a new line.</p>
+        </li>
+        <li>
+            <h2>Task 12: Numbers have life; they're not just symbols on paper</h2>
+            <p><strong>File:</strong> 101-print_number.c</p>
+            <p><strong>Description:</strong> C function that prints an integer without using long, arrays, pointers, or hard-coded special values.</p>
+        </li>
+    </ul>
