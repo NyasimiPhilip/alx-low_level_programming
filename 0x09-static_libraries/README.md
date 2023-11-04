@@ -25,7 +25,7 @@
         <li><code>char *_strstr(char *haystack, char *needle);</code></li>
     </ol>
     <h2>Header File</h2>
-    <p><code>holberton.h:</code> Header file containing the prototypes of all functions included in <code>libholberton.a</code>.</p>
+    <p><code>main.h:</code> Header file containing the prototypes of all functions included in <code>libholberton.a</code>.</p>
     <blockquote>
         <p>1. Without libraries what have we? We have no past and no future.</p>
     </blockquote>
