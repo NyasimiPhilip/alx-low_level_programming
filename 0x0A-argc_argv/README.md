@@ -1,5 +1,6 @@
 <h1>C - argc, argv</h1>
-    <h3>In this project, I learned about utilizing arguments passed to C functions with <code>argc</code> and <code>argv</code> as well as how to use <code>__attribute__((unused))</code> or <code>void</code> to compile functions with unused variables or parameters.</h3>   
+    <h3>In this project, I learned about utilizing arguments passed to C functions with <code>argc</code> and <code>argv</code> as well as how to use <code>__attribute__((unused))</code> or <code>void</code> to compile functions with unused variables or parameters.</h3> 
+    <h1>Tasks 📃</h1>   
     <ol>
         <li>
             <p><strong>It ain't what they call you, it's what you answer to</strong></p>
