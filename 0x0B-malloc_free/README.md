@@ -19,7 +19,7 @@
         <ul>
             <li>Write a function that concatenates two strings.</li>
             <li>Prototype: <code>char *str_concat(char *s1, char *s2);</code></li>
-            <li>The returned pointer should point to a newly allocated space in memory, which contains the contents of <code>s1</code>, followed by the contents of <code>s2</code, and null-terminated.</li>
+            <li>The returned pointer should point to a newly allocated space in memory, which contains the contents of <code>s1</code>, followed by the contents of <code>s2</code>, and null-terminated.</li>
             <li>If <code>NULL</code> is passed, treat it as an empty string.</li>
             <li>The function should return <code>NULL</code> on failure.</li>
         </ul>
