@@ -52,7 +52,6 @@ struct dog
     </table>
 
   <h2>Tasks 📃</h2>
- <h2>Dog Functions</h2>
     <ul>
         <li>
             <h3>1. A dog is the only thing on earth that loves you more than you love yourself</h3>
