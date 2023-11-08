@@ -52,28 +52,29 @@ struct dog
     </table>
 
   <h2>Tasks 📃</h2>
-  <h3>0. Django</h3>
-  <p>dog.h: Header file that defines a new type struct dog with the following elements:</p>
-  <ul>
-    <li>char *name</li>
-    <li>float age</li>
-    <li>char *owner</li>
-  </ul>
-
-  <h3>1. A dog is the only thing on earth that loves you more than you love yourself</h3>
-  <p>1-init_dog.c: C function that initializes a variable of type struct dog.</p>
-
-  <h3>2. A dog will teach you unconditional love. If you can have that in your life, things won't be too bad</h3>
-  <p>2-print_dog.c: C function that prints a struct dog.</p>
-  <p>If an element of d is NULL, the function prints (nil) instead of the element.</p>
-  <p>If d is NULL, the function prints nothing.</p>
-
-  <h3>3. Outside of a dog, a book is a man's best friend. Inside of a dog it's too dark to read</h3>
-  <p>dog.h: Header file that defines a new type dog_t as a new name for the type struct dog.</p>
-
-  <h3>4. A door is what a dog is perpetually on the wrong side of</h3>
-  <p>4-new_dog.c: C function that creates a dog.</p>
-  <p>Returns NULL if the function fails.</p>
-
-  <h3>5. How many legs does a dog have if you call his tail a leg? Four. Saying that a tail is a leg doesn't make it a leg</h3>
-  <p>5-free_dog.c: C function that frees dogs.</p>
+ <h2>Dog Functions</h2>
+    <ul>
+        <li>
+            <h3>1. A dog is the only thing on earth that loves you more than you love yourself</h3>
+            <p><code>1-init_dog.c:</code> C function that initializes a variable of type <strong>struct dog</strong>.</p>
+        </li>
+        <li>
+            <h3>2. A dog will teach you unconditional love. If you can have that in your life, things won't be too bad</h3>
+            <p><code>2-print_dog.c:</code> C function that prints a <strong>struct dog</strong>.</p>
+            <p>If an element of <code>d</code> is <strong>NULL</strong>, the function prints <strong>(nil)</strong> instead of the element.</p>
+            <p>If <code>d</code> is <strong>NULL</strong>, the function prints nothing.</p>
+        </li>
+        <li>
+            <h3>3. Outside of a dog, a book is a man's best friend. Inside of a dog it's too dark to read</h3>
+            <p><code>dog.h:</code> Header file that defines a new type <strong>dog_t</strong> as a new name for the type <strong>struct dog</strong>.</p>
+        </li>
+        <li>
+            <h3>4. A door is what a dog is perpetually on the wrong side of</h3>
+            <p><code>4-new_dog.c:</code> C function that creates a <strong>dog</strong>.</p>
+            <p>Returns <strong>NULL</strong> if the function fails.</p>
+        </li>
+        <li>
+            <h3>5. How many legs does a dog have if you call his tail a leg? Four. Saying that a tail is a leg doesn't make it a leg</h3>
+            <p><code>5-free_dog.c:</code> C function that frees <strong>dogs</strong>.</p>
+        </li>
+    </ul>
