@@ -1,8 +1,4 @@
 <h1>C - Preprocessor</h1>
-    <h2>Tests</h2>
-    <ul>
-        <li>tests: Folder of test files. Provided by Holberton School.</li>
-    </ul>
     <h2>Tasks</h2>
     <ul>
         <li>
