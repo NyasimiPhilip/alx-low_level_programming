@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>C - Structures, typedef</title>
-</head>
-<body>
-  <h1>In this project, I learned about using structures and typedef in C.</h1>
-
-  <h2>Tests ✔️</h2>
-  <p>tests: Folder of test files. Provided by Holberton School.</p>
-
   <h2>Header File 📁</h2>
   <p>dog.h: Header file containing definitions and prototypes for all types and functions written in the project.</p>
 
@@ -69,5 +58,3 @@
 
   <h3>5. How many legs does a dog have if you call his tail a leg? Four. Saying that a tail is a leg doesn't make it a leg</h3>
   <p>5-free_dog.c: C function that frees dogs.</p>
-</body>
-</html>
