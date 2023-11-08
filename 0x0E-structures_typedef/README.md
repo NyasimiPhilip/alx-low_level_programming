@@ -51,20 +51,6 @@ struct dog
         </tr>
     </table>
 
-  <h3>1-init_dog.c</h3>
-  <p>void init_dog(struct dog *d, char *name, float age, char *owner);</p>
-
-  <h3>2-print_dog.c</h3>
-  <p>void print_dog(struct dog *d);</p>
-  <p>If an element of d is NULL, the function prints (nil) instead of the element.</p>
-  <p>If d is NULL, the function prints nothing.</p>
-
-  <h3>4-new_dog.c</h3>
-  <p>dog_t *new_dog(char *name, float age, char *owner);</p>
-
-  <h3>5-free_dog.c</h3>
-  <p>void free_dog(dog_t *d);</p>
-
   <h2>Tasks 📃</h2>
   <h3>0. Django</h3>
   <p>dog.h: Header file that defines a new type struct dog with the following elements:</p>
