@@ -3,19 +3,20 @@
     <h2>Header File 📁</h2>
     <ul>
         <li><strong>lists.h:</strong> Header file containing definitions and prototypes for all types and functions written for the project.</li>
-        <table>
-            <tr>
-                <th>Type/File</th>
-                <th>Definition/Prototype</th>
-            </tr>
-            <tr>
-                <td>struct list_s</td>
-                <td>char *str<br>unsigned int len<br>struct list_s *next</td>
-            </tr>
-            <tr>
-                <td>typedef list_t struct list_s</td>
-            </tr>
-        </table>
+       <table>
+    <tr>
+        <th>Type/File</th>
+        <th>Definition/Prototype</th>
+    </tr>
+    <tr>
+        <td>struct list_s</td>
+        <td>char *str<br>unsigned int len<br>struct list_s *next</td>
+    </tr>
+    <tr>
+        <td>typedef list_t</td>
+        <td>struct list_s</td>
+    </tr>
+</table>
     </ul>
     <h2>Tasks 📃</h2>
     <ol>
