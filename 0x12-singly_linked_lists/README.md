@@ -19,18 +19,18 @@
 </table>
     </ul>
     <h2>Tasks 📃</h2>
-    <ol><li><code>Print list</code></li>
+    <ol><li><strong>Print list</strong></li>
 <p><code>0-print_list.c:</code> C function that prints all the elements of a list_t list. If str is NULL, the function prints [0] (nil).</p>
-<li><code>List length</code></li>
+<li><strong>List length</strong></li>
 <p><code>1-list_len.c:</code> C function that returns the number of elements in a linked list_t list.</p>
-<li><code>Add node</code></li>
+<li><strong>Add node</strong></li>
 <p><code>2-add_node.c:</code> C function that adds a new node at the beginning of a list_t list. If the function fails - returns NULL. Otherwise - returns the address of the new element.</p>
-<li><code>Add node at the end</code></li>
+<li><strong>Add node at the end</strong></li>
 <p><code>3-add_node_end.c:</code> C function that adds a new node at the end of a linked list_t list. If the function fails - returns NULL. Otherwise - returns the address of the new element.</p>
-<li><code>Free list</code></li>
+<li><strong>Free list</strong></li>
 <p><code>4-free_list.c:</code> C function that frees a list_t list.</p>
-<li><code>The Hare and the Tortoise</code></li>
+<li><strong>The Hare and the Tortoise</strong></li>
 <p><code>100-first.c:</code> C function that prints You're beat! and yet, you must allow,<br>I bore my house upon my back!<br>before the main function is executed.</p>
-<li><code>Real programmers can write assembly code in any language</code></li>
+<li><strong>Real programmers can write assembly code in any language</strong></li>
 <p><code>101-hello_holberton.asm:</code> 64-but assembly program that prints Hello, Holberton followed by a new line using only the printf function without interrupts.</p>
     </ol>
