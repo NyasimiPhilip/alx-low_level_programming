@@ -15,7 +15,7 @@ void check_num_args(int num_args)
 	}
 }
 /**
- * check_file_read - check file read errors
+ * check_file_read  check file read errors
  * @check: result of a file read operation
  * @file_from: name of the source file
  * @fd_from: file descriptor of the source file
