@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * read_textfile - Reads and writes a file's contents to the console
- * @filename: is a string specifying the file name
+ * @filename is a string specifying the file name
  * @letters: number of characters to read
  * Return: int
  */
