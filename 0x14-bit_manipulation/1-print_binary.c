@@ -18,7 +18,7 @@ unsigned long int power(unsigned int base, unsigned int pow)
 /**
  * print_binary - Prints the binary representation of a number
  * @num:  is an unsigned 64-bit integer
- * Return: void
+ * Return: void.
  */
 void print_binary(unsigned long int num)
 {
