@@ -1,6 +1,5 @@
 #ifndef MAIN_H
 #define MAIN_H
-
 int get_endianness(void);
 int _atoi(const char *s);
 unsigned int binary_to_uint(const char *b);
