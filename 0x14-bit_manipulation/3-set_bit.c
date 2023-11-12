@@ -2,7 +2,7 @@
  * set_bit - Sets the bit at the given index
  * @n: is a pointer to an unsigned 64-bit integer
  * @index: is an unsigned integer
- * Return: int.
+ * Return: int
  */
 #include "main.h"
 
