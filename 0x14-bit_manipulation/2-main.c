@@ -1,6 +1,6 @@
 /**
  *  get_bit - returns the value of the bit
- *  @n: is an unsigned long integer
+ *  @n: is an unsigned long integer.
  *  @index: is an unsigned integer
  *  Return: int
  */
