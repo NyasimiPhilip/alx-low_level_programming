@@ -2,19 +2,80 @@
     <h2>Header File 📁</h2>
     <ul>
         <li><strong>lists.h:</strong> Header file containing definitions and prototypes for all types and functions written for the project.</li>
-        <table>
-            <tr>
-                <th>Type/File</th>
-                <th>Definition/Prototype</th>
-            </tr>
-            <tr>
-                <td>struct listint_s</td>
-                <td>int n<br>struct listint_s *next</td>
-            </tr>
-            <tr>
-                <td>typedef listint_t struct listint_s</td>
-            </tr>
-        </table>
+         <h2>Type/File Definitions/Prototypes</h2>
+    <table>
+        <tr>
+            <th>Type/File</th>
+            <th>Definition/Prototype</th>
+        </tr>
+        <tr>
+            <td>struct listint_s</td>
+            <td>int n<br>struct listint_s *next</td>
+        </tr>
+        <tr>
+            <td>typedef listint_t struct listint_s</td>
+        </tr>
+        <tr>
+            <td>0-print_listint.c</td>
+            <td>size_t print_listint(const listint_t *h);</td>
+        </tr>
+        <tr>
+            <td>1-listint_len.c</td>
+            <td>size_t listint_len(const listint_t *h);</td>
+        </tr>
+        <tr>
+            <td>2-add_nodeint.c</td>
+            <td>listint_t *add_nodeint(listint_t **head, const int n);</td>
+        </tr>
+        <tr>
+            <td>3-add_nodeint_end.c</td>
+            <td>listint_t *add_nodeint_end(listint_t **head, const int n);</td>
+        </tr>
+        <tr>
+            <td>4-free_listint.c</td>
+            <td>void free_listint(listint_t *head);</td>
+        </tr>
+        <tr>
+            <td>5-free_listint2.c</td>
+            <td>void free_listint2(listint_t **head);</td>
+        </tr>
+        <tr>
+            <td>6-pop_listint.c</td>
+            <td>int pop_listint(listint_t **head);</td>
+        </tr>
+        <tr>
+            <td>7-get_nodeint.c</td>
+            <td>listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);</td>
+        </tr>
+        <tr>
+            <td>8-sum_listint.c</td>
+            <td>int sum_listint(listint_t *head);</td>
+        </tr>
+        <tr>
+            <td>9-insert_nodeint.c</td>
+            <td>listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);</td>
+        </tr>
+        <tr>
+            <td>10-delete_nodeint.c</td>
+            <td>int delete_nodeint_at_index(listint_t **head, unsigned int index);</td>
+        </tr>
+        <tr>
+            <td>100-reverse_listint.c</td>
+            <td>listint_t *reverse_listint(listint_t **head);</td>
+        </tr>
+        <tr>
+            <td>101-print_listint_safe.c</td>
+            <td>size_t print_listint_safe(const listint_t *head);</td>
+        </tr>
+        <tr>
+            <td>102-free_listint_safe.c</td>
+            <td>size_t free_listint_safe(listint_t **h);</td>
+        </tr>
+        <tr>
+            <td>103-find_loop.c</td>
+            <td>listint_t *find_listint_loop(listint_t *head);</td>
+        </tr>
+    </table>
     </ul>
     <h2>Tasks 📃</h2>
     <ol>
