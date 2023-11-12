@@ -7,7 +7,7 @@
  * File: lists.h
  * Auth: Nyasimi Philip
  * Desc: Header file containing prototypes and definitions for all functions
- * and types written in the 0x13-more_singly_linked_lists directory.
+ * and types written in the 0x13-more_singly_linked_lists directory
  */
 typedef struct listint_s
 {
