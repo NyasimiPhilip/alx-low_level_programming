@@ -1,5 +1,5 @@
 /**
- * clear_bit - Clears the bit at given index in unsigned integer.
+ * clear_bit - Clears the bit at given index in unsigned integer
  * @n:a pointer to an unsigned 64-bit integer
  * @index: is an unsigned integer
  * Return: 1 or -1
