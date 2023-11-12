@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * append_text_to_file - appends text to a file
- * @filename: a pointer to a string
+ * @filename: a pointer to a string.
  * @text_content: a pointer to a string
  * Return: int
  */
