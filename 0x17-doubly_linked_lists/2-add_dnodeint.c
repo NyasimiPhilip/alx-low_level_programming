@@ -3,7 +3,7 @@
 /**
  * add_dnodeint - add node at beginning of list
  * @head: double ptr to head
- * @n: data of new node
+ * @n: data of new node.
  * Return: address of head ptr
  */
 
