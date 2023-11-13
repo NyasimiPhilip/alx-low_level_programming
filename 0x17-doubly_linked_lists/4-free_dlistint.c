@@ -3,7 +3,7 @@
 /**
  * free_dlistint - Frees a doubly linked list.
  * @h: Pointer to the head of the list.
- * Return: void
+ * Return: void.
  */
 void free_dlistint(dlistint_t *h)
 {
