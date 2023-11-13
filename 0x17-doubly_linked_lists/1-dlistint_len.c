@@ -2,7 +2,7 @@
 /**
  * dlistint_len - get number of nodes in a list
  * @h: head ptr
- * Return: number of nodes.
+ * Return: number of nodes
  */
 size_t dlistint_len(const dlistint_t *h)
 {
