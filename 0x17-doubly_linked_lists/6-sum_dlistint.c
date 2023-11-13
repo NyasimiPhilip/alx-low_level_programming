@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- * sum_dlistint - Calculates the sum of data in a doubly linked list.
- * @h: Pointer to the head of the list.
- * Return: The sum of the data.
+ * sum_dlistint - Calculates the sum of data in a doubly linked list
+ * @h: Pointer to the head of the list
+ * Return: The sum of the data
  */
 int sum_dlistint(dlistint_t *h)
 {
