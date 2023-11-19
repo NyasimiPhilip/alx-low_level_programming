@@ -1,4 +1,4 @@
-h1>C - Dynamic libraries</h1>
+<h1>C - Dynamic libraries</h1>
     <p>In this project, I learned about using dynamic libraries in C, including how to create them and how to use them with $LD_LIBRARY_PATH, nm, ldd, and ldconfig.</p>
    <h2>Tasks</h2>
     <h3>0. A library is not a luxury but one of the necessities of life</h3>
