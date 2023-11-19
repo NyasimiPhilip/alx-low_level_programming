@@ -1,7 +1,6 @@
 /**
  * hash_djb2 - Generates a unique hash value using a custom algorithm.
- * @str: The string used to generate the hash value.
- *
+ * @str: The string used to generate the hash value
  * Return: The unique hash value.
  */
 unsigned long int hash_djb2(const unsigned char *str)
