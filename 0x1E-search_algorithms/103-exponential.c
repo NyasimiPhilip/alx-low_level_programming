@@ -3,7 +3,7 @@
  * binary_recursion - binary search using recursion
  * @array: array passed
  * @low: lower bound
- * @high: upper bound
+ * @high: upper bound.
  * @value: value to be checked
  * Return: index of value if found, else -1
  */
