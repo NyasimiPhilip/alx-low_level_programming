@@ -3,7 +3,7 @@
     <ul>
         <li>
             <h3>1. _putchar</h3>
-            <p><code>0-holberton.c:</code> C program that prints Holberton, followed by a new line. Returns 0.</p>
+            <p><code>0-putchar.c:</code> C program that prints Putchar, followed by a new line. Returns 0.</p>
         </li>
         <li>
             <h3>2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game</h3>
