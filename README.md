@@ -34,4 +34,4 @@
 <li><a href="https://github.com/NyasimiPhilip/alx-low_level_programming/tree/master/0x1E-search_algorithms">0x1E. C - Search Algorithms</a></li>
     </ul>    
     <p><strong>Author ✒️</strong></p>
-    <p>Nyasimi Philip &lt;NyasimiPhilip&gt;</p>
+    <p><code>Nyasimi Philip</code></p>
