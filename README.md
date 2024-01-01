@@ -32,7 +32,6 @@
 <li><a href="https://github.com/NyasimiPhilip/alx-low_level_programming/tree/master/0x1A-hash_tables">0x1A. C - Hash tables</a></li>
 <li><a href="https://github.com/NyasimiPhilip/alx-low_level_programming/tree/master/0x1B-sorting_algorithms_big_O">0x1B. C - Sorting algorithms & Big O</a></li>
 <li><a href="https://github.com/NyasimiPhilip/alx-low_level_programming/tree/master/0x1C-makefiles">0x1C. C - Makefiles</a></li>
-<li><a href="https://github.com/NyasimiPhilip/alx-low_level_programming/tree/master/0x1D-binary_trees">0x1D. C - Binary trees</a></li>
 <li><a href="https://github.com/NyasimiPhilip/alx-low_level_programming/tree/master/0x1E-search_algorithms">0x1E. C - Search Algorithms</a></li>
     </ul>    
     <p><strong>Author ✒️</strong></p>
