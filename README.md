@@ -20,7 +20,6 @@
 <li><a href="https://github.com/NyasimiPhilip/alx-low_level_programming/tree/master/0x0E-structures_typedef">0x0E. C - Structures, typedef</a></li>
 <li><a href="https://github.com/NyasimiPhilip/alx-low_level_programming/tree/master/0x0F-function_pointers">0x0F. C - Function pointers</a></li>
 <li><a href="https://github.com/NyasimiPhilip/alx-low_level_programming/tree/master/0x10-variadic_functions">0x10. C - Variadic functions</a></li>
-<li><a href="https://github.com/NyasimiPhilip/alx-low_level_programming/tree/master/0x11-printf">0x11. C - printf</a></li>
 <li><a href="https://github.com/NyasimiPhilip/alx-low_level_programming/tree/master/0x12-singly_linked_lists">0x12. C - Singly linked lists</a></li>
 <li><a href="https://github.com/NyasimiPhilip/alx-low_level_programming/tree/master/0x13-more_singly_linked_lists">0x13. C - More singly linked lists</a></li>
 <li><a href="https://github.com/NyasimiPhilip/alx-low_level_programming/tree/master/0x14-bit_manipulation">0x14. C - Bit manipulation</a></li>
